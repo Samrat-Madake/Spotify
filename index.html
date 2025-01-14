@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="side_bar">
+            <div class="nav">
+                <div  class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house" ></i>
+                    <a href="">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">Search</a>
+            </div>
+            </div>
+
+         <div class="library">
+
+            <div class="options">
+                <div class="lib_options nav_option">
+                    <img src="library_icon.png" alt="library_icon">
+                    <a href="" style="background-color: #121212;">Your Library</a>
+
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="libbox">
+                <div class="box1">
+                    <p class="para1">Create your first playlist</p>
+                    <br>
+                    <p class="para2">It's easy we'll help you</p>
+                    <br>
+                    <button class="badge">Create playlist</button>
+
+                </div>
+
+
+                <div class="box2">
+                    <p class="para1">Let's find some podcast to follow</p>
+                    <br>
+                    <p class="para2">We'll keep you updated on new episodes</p>
+                    <br>
+                    <button class="badge">Browse podcast</button>
+
+                </div>
+            </div>
+            
+           
+
+
+         </div>
+           
+
+
+        </div>
+    <div class="main_content scrollable">
+        <div class="sticky_nav">
+            <div class="sticky_nav_icons">
+                <div>  <img src="backward_icon.png" alt=""></div>
+                <div><img src="forward_icon.png" class="hide" alt=""></div>
+              
+                
+            </div>
+
+            <div class="sticky_nav_options">
+                <button class="badge btt hide">Explore Premium</button>
+                
+                <button class="badge btt dark_badge" >
+                    <i  class="fa-regular fa-circle-down" 
+                    style=" font-size: 1rem; margin-right: 0.75rem;"></i>Install App</button>
+               
+                <i class="fa-regular fa-user  btt" style="background-color: #121212;"></i>
+                
+            </div>
+        </div>
+       
+            
+            <h2 style="background-color: #121212; margin: 1rem 0 ;">Recently Played</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="card1img.jpeg" class="card_img" alt="">
+                    
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Top 50 - Globals</p>
+                    <p class="card_info">Your daily update of the most played...</p>
+                 </div>
+            </div>
+
+
+
+            <h2 style="background-color: #121212; margin: 1rem 0 ;">Trending Now</h2>
+            <div class="cards_container">
+                <div class="card"  onclick="playSong(0)">
+                    <img src="Tum mere ho.jpg" class="card_img" alt="" >
+                       
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Jo Tum Mere Ho</p>
+                    <p class="card_info">Anuv Jain</p>
+                 </div>
+                 
+
+                <div class="card" onclick="playSong(3)">
+
+                    <img src="mocking bird.jpg" class="card_img" alt="">
+                       
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Mocking bird</p>
+                    <p class="card_info">Eminem</p>
+                 </div>
+                
+
+                 <div class="card" onclick="playSong(1)">
+                    <img src="End of beging.jpg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">End of beginning</p>
+                    <p class="card_info">Djo</p>
+                 </div>
+
+                 <div class="card " onclick="playSong(2)">
+                    <img src="BlueOnelove.jpg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">One Love</p>
+                    <p class="card_info">Blue</p>
+                 </div>
+                 
+                 <div class="card" onclick="playSong(4)"> 
+                    <img src="softcore.jpg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Softcore</p>
+                    <p class="card_info">The Neighbourhood</p>
+                 </div>
+            </div>
+
+
+
+            <h2 style="background-color: #121212; margin: 1rem 0 ;">Featured Songs</h2>
+            <div class="cards_container">
+                <div class="card">
+                    <img src="card5img.jpeg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Top Songs Globals</p>
+                    <p class="card_info">Your daily update of the most played...</p>
+                 </div>
+
+                 <div class="card">
+                    <img src="card6img.jpeg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Top Songs India</p>
+                    <p class="card_info">Your daily update of the most played...</p>
+                 </div>
+
+                 <div class="card">
+                    <img src="card1img.jpeg" class="card_img" alt="">   
+                    <div class="play-button">
+                        <i class="fa-solid fa-circle-play" style="color: #1bde88; background-color: transparent; font-size: 2.5rem;"></i>
+                      </div>
+
+                    <p class="card_title">Top 50 - Globals</p>
+                    <p class="card_info">Your daily update of the most played...</p>
+                 </div>
+
+            </div>
+
+    <div class="footer">
+        <div class="line"></div>
+    </div>
+        
+        
+    
+</div>
+<div class="music-player">
+    <div class="album"></div>
+    <div class="player">
+        <div class="player_control">
+            <img src="player_icon1.png" class="player_control_icon" alt="">
+            <img src="player_icon2.png" class="player_control_icon" alt="">
+            <img src="player_icon3.png" class="player_control_icon" style="height: 2rem;" alt="">
+            <img src="player_icon4.png" class="player_control_icon" alt="">
+            <img src="player_icon5.png" class="player_control_icon" alt="">
+        </div>
+        <div class="playback_bar">
+
+            <span>00:00</span>
+            <input type="range" min="0" max="100" value="0" class="progress_bar"  step="1"  >
+            <span>3:33</span>
+        </div>
+    </div>
+    <div class="control">
+
+        
+    </div>
+</div>
+    </div>
+    <audio id="audio0" src="song1.mpeg"></audio>
+  <audio id="audio1" src="song2.mpeg"></audio>
+  <audio id="audio2" src="song3.mpeg"></audio>
+  <audio id="audio3" src="song4.mpeg"></audio>
+  <audio id="audio4" src="song5.mpeg"></audio>
+  <script>
+    function playSong(index) {
+      // Pause all audio elements
+      for (let i = 0; i < 5; i++) {
+        document.getElementById('audio' + i).pause();
+        document.getElementById('audio' + i).currentTime = 0;
+      }
+      // Play the selected song
+      document.getElementById('audio' + index).play();
+    }
+  </script>
+      
+</body>
+</html>
